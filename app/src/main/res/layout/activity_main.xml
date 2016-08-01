@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.saket.sharedprefrences.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbltitle"
+        android:textSize="50dp"
+        android:text="ADD CONTACT"
+         />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtname"
+        android:layout_below="@id/lbltitle"
+        android:hint="contact num"
+        android:textSize="50dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtContact"
+        android:layout_below="@id/txtname"
+        android:hint="contact num"
+        android:textSize="50dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:textSize="40dp"
+        android:id="@+id/btnadd"
+        android:layout_below="@id/txtContact"
+        android:layout_centerVertical="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show"
+        android:textSize="40dp"
+        android:id="@+id/btnshow"
+        android:layout_below="@id/btnadd"
+        android:layout_centerVertical="true"
+        android:onClick="showContact"/>
+</RelativeLayout>
